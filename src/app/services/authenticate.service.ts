@@ -11,9 +11,9 @@ export class AuthenticateService {
   loginUser(credentials){
     return new Promise((accept, reject) => {
       this.storage.get("user").then((data) => {
-        console.log(data.password)
+        console.log(data)
       if ( 
-        credentials.email == "test@test.com" && credentials.password == "123456789"
+        credentials.email == data.email && credentials.password == atob(data.password)
       ) { 
         accept("Login Correcto");
     } else {
@@ -21,6 +21,7 @@ export class AuthenticateService {
     }
       }
       );
+      
   }
     );
   }

@@ -18,31 +18,33 @@ export class IntroPage implements OnInit {
 
   slides = [
     {
-      id: 0,
-      title: "Titulo 1",
-      subtitle: "subtitulo 1",
-      description: "description 1",
-      icon: "musical-notes-outline",
-      image: "assets/images/logo.png",
-      alt: "imagen de logo"
+      title: "Bienvenido",
+      subtitle: "",
+      description: "Musi-k es una aplicación de musica diseñada para la practica y el desarrollo en el seminario",
+      image: "assets/images/slide1.jpg",
+      alt: "imagen de slide1"
     },
     {
-      id: 1,
-      title: "Titulo 2",
-      subtitle: "subtitulo 2",
-      description: "description 2",
-      icon: "play-outline",
-      image: "assets/images/musica.jpeg",
-      alt: "imagen de musica"
+      title: "Escoge tu musica favorita",
+      subtitle: "",
+      description: "Disfruta de la experiencia de escuchar la musica que más  te gusta en un solo lugar",
+      image: "assets/images/slide2.jpg",
+      alt: "imagen de slide2"
     },
     {
-      id: 2,
-      title: "Titulo 3",
-      subtitle: "subtitulo 3",
-      description: "description 3",
-      icon: "pause-outline",
-      image: "assets/images/musica2.jpeg",
-      alt: "imagen de musica 2"
+      title: "¡Comparte con tus amigos!",
+      subtitle: "",
+      description: "Comparte la experiencia de escuchar la musica del momento en compañia de amigos",
+      image: "assets/images/slide3.jpg",
+      alt: "imagen de musica 3",
+    },
+    {
+      title: "¿Listo para empezar?",
+      subtitle: "",
+      description: "",
+      image: "assets/images/slide4.jpg",
+      alt: "imagen de musica 4",
+      icon: "chevron-forward-circle-outline"
     }
   ]
   constructor(private router: Router, private storage: Storage) { 
@@ -51,7 +53,7 @@ export class IntroPage implements OnInit {
 
   finish() {
     this.storage.set("intro", true);
-    this.router.navigateByUrl("/login");
+    this.router.navigateByUrl("/menu/home");
   }
 
   ngOnInit() {

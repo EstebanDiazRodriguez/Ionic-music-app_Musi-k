@@ -69,11 +69,4 @@ export class LoginPage implements OnInit {
     this.navCtrl.navigateForward("/register");
   }
 
-  test(){
-    const password = "123456789"
-    const password_base64 = btoa(password)
-    const password_dec = atob(password_base64)
-    console.log("password encr: " + password_base64 +" password dec: " + password_dec)
-  }
-
 }

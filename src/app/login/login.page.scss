@@ -1,8 +1,17 @@
+ion-content {
+  --background: #102331;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 5px;
+}
+
 .alert {
-    padding: 20px;
-    background-color: #f44336;
-    color: white;
-    border-radius: 23px;
+  padding: 5px;
+  margin: 5px 0px 0px 5px;
+  background-color: white;
+  color: var(--ion-color-danger);
+  border: 1px solid var(--ion-color-danger);
+  border-radius: 5px;
+  width: 96%;
   }
   
   .closebtn {
@@ -19,3 +28,43 @@
   .closebtn:hover {
     color: black;
   }
+  .login-content{
+    background-color: white;
+    display: block;
+    border-radius: 25px;
+    border: 2px solid black;
+    height: 96%;
+    width: 96%;
+    margin: 10px auto 0 auto;
+  }
+  .redondoTop{
+    --background: #ffffff00;
+    border-bottom: 1px solid black;
+    color: blue;
+    margin-left: 5px;
+    width: 96%;
+  }
+  .redondoBottom{
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 96%;
+    --background: #ffffff00;
+    border-bottom: 1px solid black;
+    color: blue;
+  }
+  .loginBtn{
+    position: fixed;
+    bottom: 20px;
+    left: 10px;
+    width: 45%;
+  }
+  .registerBtn{
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    width: 45%;
+  }
+img{
+width: 140px;
+height: 140px;
+}

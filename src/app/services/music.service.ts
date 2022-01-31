@@ -7,7 +7,7 @@ import * as dataCountries from "./countries.json";
 })
 export class MusicService {
 
-  header = {'Access-Control-Request-Headers': '*', 'Authorization': 'Bearer BQDPVJXr97VhiWUwyro1p3rVUWHRjNn8SMrwxNw1Ph8k-6yi5ptlZO9yOgoJpeddWBpysx6N_HsvBoGzWqV5bNJ1NOd4csrT5ZIotFy3YBC5ZtPoZETMPu1IchWQvjx-_JTPCiRW2wcTW1lv'};
+  header = {'Access-Control-Request-Headers': '*', 'Authorization': 'Bearer BQDL-5LF6_z8otCPTE0y4WI0iVbKs27CO08EJ3mCOE2e5Sjx0I5TeMD3DZ9T-KKcMtMWEpXS1v7sZ6fyEiYCr_1h6UDWGGYw8-U6KVceyImRTOKvjrpjJQJiKa3ktI3TCYys17pWsu4YvTtEpCcydrtRlp68b1TS4RvbGtZlpGOIIsaOWcfxPBcm--8Dlkrf4SQ6JSl0XxnU1hZdh_gCCAAedZGiCwU8kVTYcodDORWpJ1uKJvvuBw3_-QCK_mZav9X1mbRYJIfapeihEHjWfRLjvS71OSrsomg1CjFP'};
   mainUrl = 'https://api.spotify.com/v1';
 
   constructor() { }
